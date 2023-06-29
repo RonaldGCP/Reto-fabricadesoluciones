@@ -45,6 +45,30 @@
     overflow-y: scroll;
     background-image: linear-gradient(50deg,#0e1e87ab 10%, #faf6f700), url(../../../img/Portafolio/adminempresas.jpg);
 }
+
+.tituloAsesoramiento, .tituloConsultoria {
+    text-align: center;
+    width: 100%;
+}
+.tituloAsesoramiento > hr, .tituloConsultoria > hr{
+    width: 15%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.asesoramiento, .consultoria{
+    padding: 10px;
+    width: 70%;
+    height: auto;
+}
+
+section > div > .imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+
 /*****************Finanzas y Comercio Exterior**************************/
 .main-finanzas h1{
     
@@ -186,7 +210,7 @@
 }
 
 .contáctosTexto{
-    line-height: 1.15;/*PEDIR AYUDA*/
+    line-height: 1.15;
     height: 150px;
 }
 
