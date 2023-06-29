@@ -288,7 +288,7 @@ background: #ffffff;
     padding: 10px;
     height: 200px;
     box-shadow: 10px 10px 20px 0 #111;
-    flex-wrap: wrap;  
+    overflow: scroll;  
 }  
 .video-experiencia {  
     text-align: center;
