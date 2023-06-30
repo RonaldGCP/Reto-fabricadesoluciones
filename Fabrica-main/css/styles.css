@@ -239,13 +239,17 @@ background: #ffffff;
 /**********************************EXPERIENCIAS******************************************/
 .caja-experiencia {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
+    flex-direction: row;
+    
 }
+
 .portada-experiencia .img-experiencia{
     width: 100%;
     height: 600px;
-  
+    background-position: center;
+    
 } 
 .titulo-experiencia {
     margin: auto;
@@ -264,6 +268,7 @@ background: #ffffff;
 
 .parrafo-experiencia{
     color: #111;
+ 
 }
 .animacion-experiencia{
     position: absolute;
@@ -271,7 +276,8 @@ background: #ffffff;
     width: 0;
     background: white;
     border-left: 1px solid #111;
-    animation: maquina 9s infinite alternate steps(60);
+    animation: maquina 8s infinite alternate steps(60);
+    flex-direction: row;
 }
 @keyframes maquina{
     from{
@@ -288,14 +294,37 @@ background: #ffffff;
     padding: 10px;
     height: 200px;
     box-shadow: 10px 10px 20px 0 #111;
-    overflow: scroll;  
+    overflow: scroll;
 }  
 .video-experiencia {  
     text-align: center;
     padding: 10px;
-    margin: 70px;  
+    margin: 70px;
 }
 
+@media screen and (max-width: 1300px){
+    .caja-experiencia {
+        flex-direction: column;
+        
+    }
+    .video-experiencia {  
+        flex-direction: column;
+
+    }
+    .header .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-Footer{
+        flex-direction: column;
+    }
+    
+    .copyright-Footer>p{
+        text-align: center;
+    }
+
+}
 /**********************************PRODUCTOS******************************************/
 .titulo{
     font-size: 30px;
@@ -388,6 +417,7 @@ p{
     display: flex;
     align-items: flex-start;
     font-family: "Inter", "san-serif";
+    align-items: center;
 }
 .container1-logo-footer{
     margin: 1%;
